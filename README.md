@@ -7,6 +7,7 @@ A simple Discord bot using BotBroker's API to gather price information for all b
 GET STARTED:
 - Get your Discord Bot Token from https://discord.com/developers/applications
 - Paste your Discord Bot Token on `Line 56`
+- Commands for the bot can be found in the `!help` command.
 
 Use `python botbroker.py` to start
 
