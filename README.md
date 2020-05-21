@@ -13,3 +13,5 @@ Use `python botbroker.py` to start
 
 TODO:
 - Make monitor version that updates sales instantly instead of having to input a command.
+
+<img src="https://i.imgur.com/aOGZFtP.png">
