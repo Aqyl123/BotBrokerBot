@@ -11,7 +11,8 @@ GET STARTED:
 
 Use `python botbroker.py` to start
 
-TODO:
-- Make monitor version that updates sales instantly instead of having to input a command.
+UPDATE (6/28/20):
+- Removed FlipsIO and Ghost SNKRS
+- Added Fake Monitor, Hidden Society, SabreIO, Polaris, Scottbot, TohruAIO
 
 <img src="https://i.imgur.com/aOGZFtP.png">
