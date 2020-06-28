@@ -13,14 +13,18 @@ import wrathaio
 import mekpreme
 import adeptsupreme
 import veloxpreme
-import ghostsnkrs
 import splashforcebot
 import prismaio
 import swftaio
+import polaris
+import scottbot
+import tohru
+from tohru import tohruL, tohruR
+from scottbot import scottbotR, scottbotL
+from polaris import polarisR, polarisL
 from swftaio import swft, swftL
 from prismaio import prism
 from splashforcebot import splashforce
-from ghostsnkrs import ghost, ghostR
 from veloxpreme import velox, veloxR
 from adeptsupreme import adept, adeptR
 from mekpreme import mek, mekR
@@ -36,24 +40,28 @@ import threefiveone
 import BounceAlerts
 import Calicos
 import Excluded
-import FlipsIO
 import GUAP
 import MEKNotifyCN
 import PeachyPings
 import RestockWorld
 import SiteSupply
+import FakeMonitor
+import HiddenSociety
+import SabreIO
+from SabreIO import sabreR, sabreL
+from HiddenSociety import hiddenL, hiddenR
+from FakeMonitor import fakeL, fakeR
 from threefiveone import threefiveoneR
 from BounceAlerts import bounceR
 from Calicos import calicosR
 from Excluded import excludedR
-from FlipsIO import flipsR
 from GUAP import guapL, guapR
 from MEKNotifyCN import meknL, meknR
 from PeachyPings import peachyL, peachyR
 from RestockWorld import rwR
 from SiteSupply import ssL, ssR
 
-token = 'YOUR BOT TOKEN'
+token = 'YOUR TOKEN HERE'
 client = discord.Client()
 
 @client.event
@@ -244,5 +252,44 @@ async def on_message(message):
 		embed.set_thumbnail(url='https://i.imgur.com/WlV0Y39.png')
 		embed.add_field(name="Lifetime:", value="{}".format(ssL), inline=True)
 		embed.add_field(name="Renewal:", value="{}".format(ssR), inline=True)
+		await message.channel.send(embed=embed)
+	if message.content.startswith('!polaris'):
+		embed = discord.Embed(title="Polaris", url="https://botbroker.io/products/polaris", description='Last recorded sales for Polaris', color=0x7873E5)
+		embed.set_thumbnail(url='https://res.cloudinary.com/dcbenpm7u/image/twitter_name/w_600/polarisaio.jpg')
+		embed.add_field(name="Sites:", value="**Adidas | Footsites | Supreme | Shopify | YeezySupply | Mesh**", inline=False)
+		embed.add_field(name="Lifetime:", value="{}".format(polarisL), inline=True)
+		embed.add_field(name="Renewal:", value="{}".format(polarisR), inline=True)
+		await message.channel.send(embed=embed)
+	if message.content.startswith('!scottbot'):
+		embed = discord.Embed(title="Scottbot", url="https://botbroker.io/products/scottbot", description='Last recorded sales for Scottbot', color=0x111111)
+		embed.set_thumbnail(url='https://res.cloudinary.com/dklrin11o/image/twitter_name/w_600/scottbotv1.jpg')
+		embed.add_field(name="Sites:", value="**Collectibles**", inline=False)
+		embed.add_field(name="Lifetime:", value="{}".format(scottbotL), inline=True)
+		embed.add_field(name="Renewal:", value="{}".format(scottbotR), inline=True)
+		await message.channel.send(embed=embed)
+	if message.content.startswith('!tohru'):
+		embed = discord.Embed(title="TohruAIO", url="https://botbroker.io/products/tohruaio", description='Last recorded sales for TohruAIO', color=0xEE8B90)
+		embed.set_thumbnail(url='https://res.cloudinary.com/dcbenpm7u/image/twitter_name/w_600/tohruaio.jpg')
+		embed.add_field(name="Sites:", value="**Footsites | Supreme**", inline=False)
+		embed.add_field(name="Lifetime:", value="{}".format(tohruL), inline=True)
+		embed.add_field(name="Renewal:", value="{}".format(tohruR), inline=True)
+		await message.channel.send(embed=embed)
+	if message.content.startswith('!fake'):
+		embed = discord.Embed(title="Fake Monitor", url="https://www.botbroker.io/groups/fake-monitor", description='Last recorded sales for Fake Monitor', color=0x42B4A1)
+		embed.set_thumbnail(url='https://i.imgur.com/dkBeWoj.png')
+		embed.add_field(name="Lifetime:", value="{}".format(fakeL), inline=True)
+		embed.add_field(name="Renewal:", value="{}".format(fakeR), inline=True)
+		await message.channel.send(embed=embed)
+	if message.content.startswith('!hidden'):
+		embed = discord.Embed(title="Hidden Society", url="https://www.botbroker.io/groups/hidden-society", description='Last recorded sales for Hidden Society', color=0x6AE59B)
+		embed.set_thumbnail(url='https://res.cloudinary.com/dcbenpm7u/image/twitter_name/w_600/ahiddensociety.jpg')
+		embed.add_field(name="Lifetime:", value="{}".format(hiddenL), inline=True)
+		embed.add_field(name="Renewal:", value="{}".format(hiddenR), inline=True)
+		await message.channel.send(embed=embed)
+	if message.content.startswith('!sabre'):
+		embed = discord.Embed(title="SabreIO", url="https://www.botbroker.io/groups/sabreio", description='Last recorded sales for SabreIO', color=0x20203C)
+		embed.set_thumbnail(url='https://res.cloudinary.com/dklrin11o/image/twitter_name/w_600/sabreio.jpg')
+		embed.add_field(name="Lifetime:", value="{}".format(sabreL), inline=True)
+		embed.add_field(name="Renewal:", value="{}".format(sabreR), inline=True)
 		await message.channel.send(embed=embed)
 client.run(token)
