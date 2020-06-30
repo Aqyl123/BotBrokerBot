@@ -1,4 +1,4 @@
-# BotBroker-Discord-Bot
+# BotBrokerBot
 
 Made by Aqyl#0093
 
