@@ -11,6 +11,9 @@ GET STARTED:
 
 Use `python botbroker.py` to start
 
+UPDATE (7/20/20):
+- Added Sole AIO
+
 UPDATE (7/8/20):
 - Added Notify
 - Made adjustments to `botbroker.py` file such as fixing broken image links and adding on to the `!bots` and `!groups` commands.
