@@ -65,7 +65,7 @@ from PeachyPings import peachyL, peachyR
 from RestockWorld import rwR
 from SiteSupply import ssL, ssR
 
-token = 'NzAzMzI2OTcyNTE1NzEzMDc0.XxerzQ.3-9hAvPkS1IalStkg9C4Whq5Dcg'
+token = 'YOUR TOKEN HERE'
 client = discord.Client()
 
 @client.event
