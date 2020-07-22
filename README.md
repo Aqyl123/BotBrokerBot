@@ -11,7 +11,7 @@ GET STARTED:
 
 Use `python botbroker.py` to start
 
-UPDATE (7/20/20):
-- Added Sole AIO
+UPDATE (7/21/20):
+- Added cloudscraper to replace the requests module, program sleeps for 5s to avoid anti-bot protection.
 
 <img src="https://i.imgur.com/aOGZFtP.png">
