@@ -48,12 +48,10 @@ import PeachyPings
 import RestockWorld
 import SiteSupply
 import FakeMonitor
-import HiddenSociety
 import SabreIO
 import Notify
 from Notify import notifyL, notifyR
 from SabreIO import sabreR, sabreL
-from HiddenSociety import hiddenL, hiddenR
 from FakeMonitor import fakeL, fakeR
 from threefiveone import threefiveoneR
 from BounceAlerts import bounceR
@@ -112,7 +110,7 @@ async def on_message(message):
 		embed = discord.Embed(title="Groups", description="List of all groups provided on BotBroker")
 		embed.set_author(name="BotBroker", url="https://www.botbroker.io/groups", icon_url="https://pbs.twimg.com/profile_images/1202325425466134528/bQyROCKB_400x400.jpg")
 		embed.set_thumbnail(url="https://pbs.twimg.com/profile_images/1202325425466134528/bQyROCKB_400x400.jpg")
-		embed.add_field(name="Groups:", value="!351\n!bounce\n!calicos\n!excluded\n!guap\n!meknotify\n!peachy\n!rw\n!sitesupply\n!fake\n!hidden\n!sabre\n!notify", inline=True)
+		embed.add_field(name="Groups:", value="!351\n!bounce\n!calicos\n!excluded\n!guap\n!meknotify\n!peachy\n!rw\n!sitesupply\n!fake\n!sabre\n!notify", inline=True)
 		await message.channel.send(embed=embed)
 	if message.content.startswith('!cyber'):
 		embed = discord.Embed(title="Cybersole", url="https://www.botbroker.io/products/cyber-aio", description="Last recorded sales for Cybersole", color=0x3fe25b)
@@ -283,12 +281,6 @@ async def on_message(message):
 		embed.set_thumbnail(url='https://i.imgur.com/dkBeWoj.png')
 		embed.add_field(name="Lifetime:", value="{}".format(fakeL), inline=True)
 		embed.add_field(name="Renewal:", value="{}".format(fakeR), inline=True)
-		await message.channel.send(embed=embed)
-	if message.content.startswith('!hidden'):
-		embed = discord.Embed(title="Hidden Society", url="https://www.botbroker.io/groups/hidden-society", description='Last recorded sales for Hidden Society', color=0x6AE59B)
-		embed.set_thumbnail(url='https://res.cloudinary.com/dcbenpm7u/image/twitter_name/w_600/ahiddensociety.jpg')
-		embed.add_field(name="Lifetime:", value="{}".format(hiddenL), inline=True)
-		embed.add_field(name="Renewal:", value="{}".format(hiddenR), inline=True)
 		await message.channel.send(embed=embed)
 	if message.content.startswith('!sabre'):
 		embed = discord.Embed(title="SabreIO", url="https://www.botbroker.io/groups/sabreio", description='Last recorded sales for SabreIO', color=0x20203C)
