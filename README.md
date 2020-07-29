@@ -12,8 +12,8 @@ GET STARTED:
 
 Use `python botbroker.py` to start
 
-UPDATE (7/21/20):
-- Added cloudscraper to replace the requests module, program sleeps for 5s to avoid anti-bot protection.
+UPDATE (7/29/20):
+- Removed Hidden Society from Groups.
 
 IN PROGRESS (7/21/20):
 - Working on a rewrite to better adapt to the API
