@@ -12,10 +12,15 @@ GET STARTED:
 
 Use `python botbroker.py` to start
 
-UPDATE (7/29/20):
-- Removed Hidden Society from Groups.
+UPDATE (10/17/20):
+- Fixed some bots/groups pictures not showing
+- Added Nebula to bots
+- Added Drop O'Clock to groups
+- Removed !guide command
+- Updated !bots command
+- Updated !groups command
 
-IN PROGRESS (7/21/20):
+IN PROGRESS (10/17/20):
 - Working on a rewrite to better adapt to the API
 - Load time improvements
 - Overall bug fixes
