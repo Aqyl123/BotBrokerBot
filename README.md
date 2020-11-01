@@ -1,6 +1,6 @@
 # BotBrokerBot
 
-Made by Aqyl#0093
+Made by Aqyl#0001
 
 A simple Discord bot using BotBroker's API to gather price information for all bots and groups available on their site
 
