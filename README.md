@@ -12,17 +12,16 @@ GET STARTED:
 
 Use `python botbroker.py` to start
 
-UPDATE (10/17/20):
-- Fixed some bots/groups pictures not showing
-- Added Nebula to bots
-- Added Drop O'Clock to groups
-- Removed !guide command
+UPDATE VERSION 0.0.7 (11/02/20):
+- MAJOR load time improvements over 92% faster
+- Compiled all bots into one file
+- Compiled all groups into one file
+- Updated load screen
+- Added MEKAIO to bots
 - Updated !bots command
-- Updated !groups command
 
-IN PROGRESS (10/17/20):
+IN PROGRESS (11/02/20):
 - Working on a rewrite to better adapt to the API
-- Load time improvements
 - Overall bug fixes
 
 <img src="https://i.imgur.com/aOGZFtP.png">
