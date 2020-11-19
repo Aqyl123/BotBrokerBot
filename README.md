@@ -20,8 +20,9 @@ UPDATE VERSION 0.0.7 (11/02/20):
 - Added MEKAIO to bots
 - Updated !bots command
 
-IN PROGRESS (11/02/20):
-- Working on a rewrite to better adapt to the API
-- Overall bug fixes
+IN PROGRESS (11/18/20):
+- Received access to BotBroker API v2
+- Halfway done with the re-write
+- Unfortunately you'll need an API from @66_shrey.
 
 <img src="https://i.imgur.com/aOGZFtP.png">
